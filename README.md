@@ -1,5 +1,5 @@
 ## Employee-Accounting-App
 #### ReactPetrechenko project, part 1
 
-##### Rreview 
+##### Preview 
 ![preview](my-app/public/preview.png)
