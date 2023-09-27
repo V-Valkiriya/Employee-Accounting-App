@@ -1,8 +1,26 @@
 
+import { Component } from "react";
 import "./employees-list-item.css";
 
-const EmployeesListItem = (props) => {
-    const {name, salary, onDelete, onToggleProp, increase, rise} = props;
+class EmployeesListItem extends Component  {
+  constructor(props) {
+    super(props);
+    this.state = {
+      salary: this.props.salary
+    }
+  }
+
+    onSalaryChange = (e) => {
+      const {onSalaryChange, name} = this.props;
+      this.setState(({salary}) => ({
+        salary: e.target.value
+      }));
+
+      onSalaryChange(name, e.target.value)
+    }
+
+  render() {
+    const {name, salary, onDelete, onToggleProp, increase, rise} = this.props;
 
     let classNames = "list-group-item d-flex justify-content-between";
     if (increase) {
@@ -38,6 +56,7 @@ const EmployeesListItem = (props) => {
         </div>
       </li>
     );
+  }
   }
 
 

@@ -1,5 +1,5 @@
 ## Employee-Accounting-App
-#### ReactPetrechenko project, part 1
+#### React project for accounting of employees
 
 ##### Preview 
-![preview](my-app/public/preview.png)
+![preview](public/preview.png)
